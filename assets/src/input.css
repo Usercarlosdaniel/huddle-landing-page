@@ -1,0 +1,59 @@
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+button {
+  @apply cursor-pointer bg-transparent  rounded-[10rem];
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+}
+
+h1,
+h2,
+button {
+  @apply font-semibold font-poppins text-cyan-very-dark;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.service {
+  @apply flex justify-between items-center py-[3.125rem] pr-[.625rem] pl-[4.063rem] mb-[2.5rem] rounded-[.625rem] normal:flex-col normal:py-8 normal:px-5 normal:text-center;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+}
+.service img {
+  @apply max-w-full w-[32.5rem] py-[.938rem] pr-[5rem] pl-[3.75rem] almost-small:p-0;
+}
+.service div {
+  @apply pl-[4.375rem] normal:px-12 normal:mt-4;
+}
+.service div h2 {
+  @apply my-[.625rem] text-3xl;
+}
+.service div p {
+  @apply w-[50%] md:w-[100%] text-blue-grayish;
+}
+.promo {
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+}
+
+.links {
+  @apply no-underline text-white hover:underline;
+}
+
+.fa-brands {
+  @apply p-4 border border-white border-solid rounded-full w-[1.125rem] text-center;
+}
+
+.bg-pink {
+  box-shadow: 0 3px 16px rgba(255, 82, 191, 0.45);
+}
