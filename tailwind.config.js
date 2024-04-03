@@ -32,8 +32,12 @@ module.exports = {
           max: "645px",
         },
         small: {
-          max: "499px"
-        }
+          max: "499px",
+        },
+      },
+      boxShadow: {
+        normal: "0 3px 16px rgba(0, 0, 0, 0.12)",
+        pink: "0 3px 16px rgba(255, 82, 191, 0.12)",
       },
     },
   },
